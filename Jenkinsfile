@@ -1,7 +1,7 @@
 node {
   stage ('SCM Checkout'){
   
-  git 'https://github.com/ja81/Quarkus-Rest.git'
+  git 'git@github.com:ja81/Quarkus-Rest.git'
   }
   
   stage ('Compile-Package'){
