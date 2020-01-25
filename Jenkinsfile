@@ -1,8 +1,7 @@
 node {
   stage ('SCM Checkout'){
   
-  git  credentialsId: 'ja81',
-       url: 'git@github.com:ja81/Quarkus-Rest.git'
+  git url: 'git@github.com:ja81/Quarkus-Rest.git'
   }
   
   stage ('Compile-Package'){
