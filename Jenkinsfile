@@ -6,8 +6,8 @@ node {
   }
   
   stage ('Compile-Package'){
-  //dev mvnHome = tool name: 'maven-3', type: 'maven'
-   sh "${mvnHome}/bin/mvn package -Pnative -Dquarkus.native.container-build=true"
+  dev mvnHome = tool name: 'maven-3', type: 'maven'
+  bat "${mvnHome}/bin/mvn package -Pnative -Dquarkus.native.container-build=true"
    // bat "mvn package -Pnative -Dquarkus.native.container-build=true"
   }
  }
