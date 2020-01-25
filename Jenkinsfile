@@ -1,4 +1,8 @@
 node {
+  agent any
+  tools {
+    maven: 'maven-3'
+  }
   stage ('SCM Checkout'){
   
   git url: 'https://github.com/ja81/Quarkus-Rest.git'
