@@ -1,7 +1,7 @@
 node {
   stage ('SCM Checkout'){
   
-  git  credentialsId: 'Jenkins ssh-rsa-public-key',
+  git  credentialsId: 'ja81',
        url: 'git@github.com:ja81/Quarkus-Rest.git'
   }
   
